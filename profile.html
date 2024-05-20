@@ -19,7 +19,7 @@
 
    <section class="flex">
 
-      <a href="home.html" class="logo">yum-yum 😋</a>
+      <a href="home.html" class="logo">APP GUSTO</a>
 
       <nav class="navbar">
          <a href="home.html">home</a>
@@ -37,7 +37,7 @@
       </div>
 
       <div class="profile">
-         <p class="name">shaikh anas</p>
+         <p class="name">nombre</p>
          <div class="flex">
             <a href="profile.html" class="btn">profile</a>
             <a href="#" class="delete-btn">logout</a>
@@ -47,23 +47,131 @@
    </section>
 
 </header>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil del Cliente</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .section {
+        margin-bottom: 30px;
+    }
+    .section h2 {
+        margin-bottom: 20px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .form-group input {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+    .form-group button {
+        padding: 10px 15px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .form-group button:hover {
+        background-color: #0056b3;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid #ccc;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+    th {
+        background-color: #f4f4f4;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="section">
+        <h2>Datos del Perfil</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" value="Juan" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" value="Pérez" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" value="juan.perez@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" value="123456789" required>
+            </div>
+            <div class="form-group">
+                <label for="identificacion">Identificación:</label>
+                <input type="text" id="identificacion" name="identificacion" value="ABC123456" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Guardar Cambios</button>
+            </div>
+        </form>
+    </div>
 
-<div class="heading">
-   <h3>my profile</h3>
-   <p><a href="home.html">home </a> <span> / profile</span></p>
+    <div class="section">
+        <h2>Historial de Pedidos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Número de Pedido</th>
+                    <th>Fecha</th>
+                    <th>Estado</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>2024-01-01</td>
+                    <td>Entregado</td>
+                    <td>$100.00</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>2024-02-15</td>
+                    <td>En Proceso</td>
+                    <td>$250.00</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>2024-03-30</td>
+                    <td>Cancelado</td>
+                    <td>$0.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
-
-<section class="user-details">
-
-   <div class="user">
-      <img src="images/user-icon.png" alt="">
-      <p><i class="fas fa-user"></i> <span>shaikh anas</span></p>
-      <p><i class="fas fa-phone"></i> <span>1234567890</span></p>
-      <p><i class="fas fa-envelope"></i> <span>shaikhanas@gmail.com</span></p>
-      <a href="update_profile.html" class="btn">update profile</a>
-      <p class="address"><i class="fas fa-map-marker-alt"></i> <span>flat no. 1, building no. 1, jogeshwari west, mumbai, india - 400104</span></p>
-      <a href="update_address.html" class="btn">update address</a>
-   </div>
 
 </section>
 
