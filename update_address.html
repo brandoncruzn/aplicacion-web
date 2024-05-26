@@ -22,16 +22,16 @@
       <a href="home.html" class="logo">APP GUSTO</a>
 
       <nav class="navbar">
-         <a href="home.html">home</a>
-         <a href="about.html">about</a>
-         <a href="menu.html">menu</a>
-         <a href="orders.html">orders</a>
-         <a href="contact.html">contact</a>
+         <a href="home.html">Inicio</a>
+         <a href="about.html">Acerca de</a>
+         <a href="menu.html">Menu</a>
+         <a href="orders.html">Pedidos</a>
+         <a href="contact.html">Contacto</a>
       </nav>
 
       <div class="icons">
          <a href="search.html"><i class="fas fa-search"></i></a>
-         <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+         <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
          <div id="user-btn" class="fas fa-user"></div>
          <div id="menu-btn" class="fas fa-bars"></div>
       </div>
@@ -52,13 +52,13 @@
 <section class="form-container">
 
    <form action="" method="post">
-      <h3>your address</h3>
-      <input type="text" maxlength="50" placeholder="flat no. and building name" required class="box" name="flat">
-      <input type="text" maxlength="50" placeholder="area name" required class="box" name="street">
-      <input type="text" maxlength="50" placeholder="city name" required class="box" name="city">
-      <input type="text" maxlength="50" placeholder="state name" required class="box" name="state">
-      <input type="text" maxlength="50" placeholder="country name" required class="box" name="country">
-      <input type="number" min="0" max="999999" placeholder="pin code" required class="box" name="pin_code" onkeypress="if(this.value.length == 6) return false;">
+      <h3>Ubicacion</h3>
+      <input type="text" maxlength="50" placeholder="direccion" required class="box" name="flat">
+      <input type="text" maxlength="50" placeholder="localidad" required class="box" name="street">
+      <input type="text" maxlength="50" placeholder="barrio" required class="box" name="state">
+      <input type="text" maxlength="50" placeholder="ciudad" required class="box" name="city">
+      <input type="text" maxlength="50" placeholder="pais" required class="box" name="country">
+      <input type="number" min="0" max="999999" placeholder="codigo postal" required class="box" name="pin_code" onkeypress="if(this.value.length == 6) return false;">
       <input type="submit" value="save address" name="submit" class="btn">
    </form>
 
