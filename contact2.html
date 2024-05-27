@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>register</title>
+   <title>contact us</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -22,15 +22,14 @@
       <a href="home.html" class="logo">APP GUSTO</a>
 
       <nav class="navbar">
-         <a href="home1.html">Inicio</a>
-         <a href="about.html">Acerca de</a>
-         <a href="menu.html">Menu</a>
-         <a href="contact.html">Contacto</a>
+         <a href="home2.html">Inicio</a>
+         <a href="menu2.html">Menu</a>
+         <a href="orders.html">Pedidos</a>
+         <a href="reservas.html">Reservas</a>
+         <a href="contact2.html">Contacto</a>
       </nav>
 
       <div class="icons">
-         <a href="search.html"><i class="fas fa-search"></i></a>
-         <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
          <div id="user-btn" class="fas fa-user"></div>
          <div id="menu-btn" class="fas fa-bars"></div>
       </div>
@@ -38,30 +37,43 @@
       <div class="profile">
          <p class="name">shaikh anas</p>
          <div class="flex">
-            <a href="profile.html" class="btn">profile</a>
+            <a href="profile2.html" class="btn">profile</a>
             <a href="#" class="delete-btn">logout</a>
          </div>
-      
       </div>
 
    </section>
 
 </header>
 
-<section class="form-container">
+<div class="heading">
+   <h3>Comunicate con nosotros </h3>
+   <p><a href="home.html">home </a> <span> / contacto</span></p>
+</div>
 
-   <form action="" method="post">
-      <h3>Ubicacion</h3>
-      <input type="text" maxlength="50" placeholder="direccion" required class="box" name="flat">
-      <input type="text" maxlength="50" placeholder="localidad" required class="box" name="street">
-      <input type="text" maxlength="50" placeholder="barrio" required class="box" name="state">
-      <input type="text" maxlength="50" placeholder="ciudad" required class="box" name="city">
-      <input type="text" maxlength="50" placeholder="pais" required class="box" name="country">
-      <input type="number" min="0" max="999999" placeholder="codigo postal" required class="box" name="pin_code" onkeypress="if(this.value.length == 6) return false;">
-      <input type="submit" value="save address" name="submit" class="btn">
-   </form>
+<section class="contact">
+
+   <div class="row">
+
+      <div class="image">
+         <img src="images/contact-img.svg" alt="">
+      </div>
+
+      <form action="" method="post">
+         <h3>Cuentanos de ti!</h3>
+         <input type="text" name="name" required placeholder="enter your name" maxlength="50" class="box">
+         <input type="number" name="number" required placeholder="enter your number" max="9999999999" min="0" class="box" onkeypress="if(this.value.length == 10) return false;">
+         <input type="email" name="email" required placeholder="enter your email" maxlength="50" class="box">
+         <textarea name="msg" placeholder="enter your message" required class="box" cols="30" rows="10" maxlength="500"></textarea>
+         <input type="submit" value="Enviar" class="btn" name="send">
+      </form>
+
+   </div>
 
 </section>
+
+
+
 
 
 
