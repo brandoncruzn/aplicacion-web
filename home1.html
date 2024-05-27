@@ -178,7 +178,7 @@
 
       <div class="icons">
          <a href="search.html"><i class="fas fa-search"></i></a>
-         <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+         <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
          <div id="user-btn" class="fas fa-user"></div>
          <div id="menu-btn" class="fas fa-bars"></div>
       </div>
@@ -213,9 +213,9 @@
 
          <div class="swiper-slide slide">
             <div class="content">
-               <span>order online</span>
-               <h3>double hamburger</h3>
-               <a href="menu.html" class="btn">see menus</a>
+               <span>orden online</span>
+               <h3>hamburguesa doble</h3>
+               <a href="menu.html" class="btn">Ver menus</a>
             </div>
             <div class="image">
                <img src="images/home-img-2.png" alt="">
@@ -223,9 +223,9 @@
          </div>
          <div class="swiper-slide slide">
             <div class="content">
-               <span>order online</span>
-               <h3>roasted chicken</h3>
-               <a href="menu.html" class="btn">see menus</a>
+               <span>orden online</span>
+               <h3>pollo asado</h3>
+               <a href="menu.html" class="btn">Ver menus</a>
             </div>
             <div class="image">
                <img src="images/home-img-3.png" alt="">
@@ -236,40 +236,49 @@
    </div>
 </section>
 
-<section class="category">
-   <h1 class="title">food category</h1>
-   <div class="box-container">
-      <a href="category.html" class="box">
-         <img src="images/cat-1.png" alt="">
-         <h3>fast food</h3>
-      </a>
-      <a href="category.html" class="box">
-         <img src="images/cat-2.png" alt="">
-         <h3>main dishes</h3>
-      </a>
-      <a href="category.html" class="box">
-         <img src="images/cat-3.png" alt="">
-         <h3>drinks</h3>
-      </a>
-      <a href="category.html" class="box">
-         <img src="images/cat-4.png" alt="">
-         <h3>desserts</h3>
-      </a>
-   </div>
-</section>
 
-<section class="products">
-   <h1 class="title">latest dishes</h1>
-   <div class="box-container">
-      <form method="post" class="box">
-         <a href="quick_view.html" class="fas fa-eye"></a>
-         <button type="submit" name="add_to_cart"><i class="fas fa-shopping-cart"></i></button>
-         <img src="uploaded_img/pizza-1.png" alt="">
-         <a href="category.html" class="cat">fast food</a>
-         <div class="name">delicious pizza 01</div>
-         <div class="flex">
-            <div class="price"><span>$</span>3<span>/-</span></div>
-            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-         </div>
-      </form>
-      <!-- More product
+<footer class="footer">
+   <section class="box-container">
+      <div class="box">
+         <img src="images/email-icon.png" alt="">
+         <h3>our email</h3>
+         <a href="mailto:shaikhanas@gmail.com">branjon.09@gmail.com</a>
+      </div>
+      <div class="box">
+         <img src="images/clock-icon.png" alt="">
+         <h3>opening hours</h3>
+         <p>07am to 10pm </p>
+      </div>
+      <div class="box">
+         <img src="images/map-icon.png" alt="">
+         <h3>our address</h3>
+         <a href="https://www.google.com/maps">colombia </a>
+      </div>
+      <div class="box">
+         <img src="images/phone-icon.png" alt="">
+         <h3>our number</h3>
+         <a href="tel:1234567890">3143957905</a>
+      </div>
+   </section>
+   <div class="credit">&copy; copyright @ 2022 by <span>web app gusto</span> | all rights reserved!</div>
+</footer>
+
+<div class="loader">
+   <img src="images/loader.gif" alt="">
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+var swiper = new Swiper(".home-slider", {
+   loop:true,
+   grabCursor:true,
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+   },
+});
+</script>
+
+</body>
+</html>
