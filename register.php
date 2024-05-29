@@ -14,6 +14,10 @@
 
 </head>
 <body>
+   <?php
+      include_once(conexion.php);
+      conexion::ConexionBD();
+   ?>
    
 <header class="header">
 
