@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Iniciar sesion</title>
+   <title>food menu</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -22,7 +22,10 @@
       <a href="home.html" class="logo">APP GUSTO</a>
 
       <nav class="navbar">
-
+         <a href="home2.html">Inicio</a>
+         <a href="menu2.html">Menu</a>
+         <a href="reservas.html">Reserva</a>
+         <a href="contact.html">Contacto</a>
       </nav>
 
       <div class="icons">
@@ -31,30 +34,45 @@
       </div>
 
       <div class="profile">
+         <p class="name">shaikh anas</p>
          <div class="flex">
-            <a href="login1.html" class="btn">login</a>
-            <a href="register.html" class="delete-btn">register</a>
+            <a href="profile2.html" class="btn">profile</a>
+            <a href="#" class="delete-btn">logout</a>
          </div>
-     
       </div>
 
    </section>
 
 </header>
 
-<section class="form-container">
+<div class="heading">
+   <h3>Menu</h3>
+   <p><a href="home.html">home </a> <span> / menu</span></p>
+</div>
+ 
 
-   <form action="" method="post">
-      <h3>Inicio de sesion</h3>
-      <input type="email" required maxlength="50" name="email" placeholder="enter your email" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-      <input type="password" required maxlength="20" name="pass" placeholder="enter your password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-      <a href="home1.html" class="btn">Iniciar sesion</a>
-      <p>todavia no tienes una cuenta? <a href="register.html">Registrarse</a></p>
-   </form>
+<section class="category">
+   <h1 class="title">¿Que menu desear editar?</h1>
+   <div class="box-container">
+      <a href="comidas_rapidas2.html" class="box">
+         <img src="images/cat-1.png" alt="">
+         <h3>Comidas rapidas</h3>
+      </a>
+      <a href="comidas2.html" class="box">
+         <img src="images/cat-2.png" alt="">
+         <h3>Comidas</h3>
+      </a>
+      <a href="bebidas2.html" class="box">
+         <img src="images/cat-3.png" alt="">
+         <h3>Bebidas</h3>
+      </a>
+      <a href="Postres2.html" class="box">
+         <img src="images/cat-4.png" alt="">
+         <h3>Postres</h3>
+      </a>
+   </div>
 
 </section>
-
-
 
 
 
@@ -87,6 +105,8 @@
          <a href="tel:1234567890">3143957905</a>
       </div>
 
+
+   
    </section>
 
    <div class="credit">&copy; copyright @ 2022 by <span>web app gusto</span> | all rights reserved!</div>
