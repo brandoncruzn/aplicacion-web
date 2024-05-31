@@ -99,7 +99,7 @@
       <script src="js/script.js"></script>
 
    <?php
-      include(registrar.php);
+      include("registrar.php");
    ?>
 
 </body>
