@@ -100,7 +100,7 @@
 
    <?php
       include(registrar.php);
-   >?
+   ?>
 
 </body>
 </html>
