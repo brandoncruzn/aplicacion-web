@@ -1,14 +1,15 @@
 <?php
-$servername = "viaduct.proxy.rlwy.net";
-$database = "railway";
-$username = "root";
-$password = "oiUfJbGYmCHxFQAMzvxRJdwBfNgiVgcg";
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+/*
+	CRUD con MySQL y PHP
+	@author parzibyte
+	@date 2018-02-12
+*/
+$contraseña = "oiUfJbGYmCHxFQAMzvxRJdwBfNgiVgcg";
+$usuario = "root";
+$nombre_base_de_datos = "railway";
+try{
+	$base_de_datos = new PDO('mysql://root:oiUfJbGYmCHxFQAMzvxRJdwBfNgiVgcg@viaduct.proxy.rlwy.net:26319/railway;dbname=railway' . $nombre_base_de_datos, $usuario, $contraseña);
+}catch(Exception $e){
+	echo "Ocurrió algo con la base de datos: " . $e->getMessage();
 }
-echo "Connected successfully";
-mysqli_close($conn);
 ?>
