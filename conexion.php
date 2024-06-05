@@ -1,6 +1,14 @@
 <?php
-$conex = mysqli_connect("localhost", "root", "", "registro");
-if (!$conex) {
-    die("Error de conexión: " . mysqli_connect_error());
+$servername = "viaduct.proxy.rlwy.net";
+$database = "railway";
+$username = "root";
+$password = "oiUfJbGYmCHxFQAMzvxRJdwBfNgiVgcg";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
+echo "Connected successfully";
+mysqli_close($conn);
 ?>
