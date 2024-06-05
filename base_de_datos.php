@@ -1,15 +1,14 @@
 <?php
-/*
-	CRUD con MySQL y PHP
-	@author parzibyte
-	@date 2018-02-12
-*/
-$contraseña = "";
-$usuario = "root";
-$nombre_base_de_datos = "pruebas";
-try{
-	$base_de_datos = new PDO('mysql:host=localhost;dbname=' . $nombre_base_de_datos, $usuario, $contraseña);
-}catch(Exception $e){
-	echo "Ocurrió algo con la base de datos: " . $e->getMessage();
+$servername = "viaduct.proxy.rlwy.net";
+$database = "railway";
+$username = "root";
+$password = "oiUfJbGYmCHxFQAMzvxRJdwBfNgiVgcg";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
+echo "Connected successfully";
+mysqli_close($conn);
 ?>
