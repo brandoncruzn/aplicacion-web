@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    include("conexion.php");
+    include("base_de_datos.php");
 
     $name = $_POST['name'];
     $email = $_POST['email'];
