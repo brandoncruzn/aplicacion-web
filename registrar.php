@@ -1,7 +1,7 @@
 <?php
 #Si todo va bien, se ejecuta esta parte del código...
 
-include_once "base_de_datos.php";
+include_once "conexion.php";
 $name = $_POST['name'];
 $email = $_POST['email'];
 $telefono = $_POST['number'];
