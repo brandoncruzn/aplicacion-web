@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $number = $_POST['number'];
+    $telefono = $_POST['number'];
     $pass = $_POST['pass'];
     $cpass = $_POST['cpass'];
 
@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $hashed_password = password_hash($pass, PASSWORD_DEFAULT);
 
-        $sql = "INSERT INTO datos (nombre, email, numero, pasword) VALUES ('$name', '$email', '$number', '$hashed_password')";
+        $sql = "INSERT INTO datos (nombre, email, numero, password) VALUES ('$name', '$email', '$number', '$hashed_password')";
 
         if (mysqli_query($conex, $sql)) {
             echo "Registro exitoso.";
